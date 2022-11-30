@@ -335,8 +335,7 @@ body{
     }
 }
 .qwe{
-    width: 500px;
-    height: 500px;
+    width: 380px;
     border: 1px solid rgb(121, 121, 121);
     position: relative;
     flex-direction: column;
@@ -344,18 +343,18 @@ body{
         display: block;
         content: '';
         position: absolute;
-        width: 802px;
-        height: 394px;
+        width: 760px;
+        height: 376px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         transition: $transition;
     }
     &::before{
-        background: url(../img/ellipse_1.png) no-repeat center center / cover;
+        background: url(../img/ellipse_1.png) no-repeat center center / contain;
     }
     &::after{
-        background: url(../img/ellipse_2.png) no-repeat center center / cover;
+        background: url(../img/ellipse_2.png) no-repeat center center / contain;
     }
     &:hover{
         &::before{
