@@ -452,8 +452,8 @@ body {
   display: block;
   content: "";
   position: absolute;
-  width: 760px;
-  height: 376px;
+  width: 786px;
+  height: 388px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
