@@ -334,6 +334,30 @@ body{
         padding-bottom: 120px;
     }
 }
+.qwe{
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(121, 121, 121);
+    position: relative;
+    flex-direction: column;
+    &::before, &::after{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 802px;
+        height: 394px;
+        top: 50%;
+        margin-top: -197px;
+        right: 50%;
+        margin-right: -401px;
+    }
+    &::before{
+        background: url(../img/ellipse_1.png) no-repeat center center / cover;
+    }
+    &::after{
+        background: url(../img/ellipse_2.png) no-repeat center center / cover;
+    }
+}
 .intro {
 
     &__pic {
