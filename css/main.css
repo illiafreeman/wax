@@ -475,6 +475,11 @@ body {
   text-align: center;
   display: inline-flex;
 }
+.qwe:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
 
 .intro__pic {
   margin-bottom: 120px;

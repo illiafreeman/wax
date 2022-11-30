@@ -368,6 +368,11 @@ body{
         text-align: center;
         display: inline-flex;
     }
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+    }
 }
 .intro {
 
