@@ -182,7 +182,7 @@ body {
 .header {
   position: relative;
   padding: 18px 0 0;
-  margin-bottom: 104px;
+  margin-bottom: 180px;
 }
 .header .container {
   border-bottom: 1px solid #272727;
@@ -444,9 +444,9 @@ body {
 
 .qwe {
   width: 380px;
-  border: 1px solid rgb(121, 121, 121);
   position: relative;
   flex-direction: column;
+  text-align: center;
 }
 .qwe::before, .qwe::after {
   display: block;
