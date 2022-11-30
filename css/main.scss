@@ -347,9 +347,9 @@ body{
         width: 802px;
         height: 394px;
         top: 50%;
-        margin-top: -197px;
-        right: 50%;
-        margin-right: -401px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: $transition;
     }
     &::before{
         background: url(../img/ellipse_1.png) no-repeat center center / cover;
@@ -357,6 +357,15 @@ body{
     &::after{
         background: url(../img/ellipse_2.png) no-repeat center center / cover;
     }
+    &:hover{
+        &::before{
+            transform: translate(-50%, -50%) rotate(10deg);
+        }
+        &::after{
+            transform: translate(-50%, -50%) rotate(-10deg);
+        }
+    }
+    
 }
 .intro {
 
