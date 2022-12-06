@@ -5,7 +5,9 @@
 
 @import '_var';
 @import '_help';
-
+@import '_slick';
+@import '_slick-theme';
+@import '_animate';
 
 
 /*fixed footer*/
@@ -831,7 +833,7 @@ body{
 
 
 
-@import '_animate';
+
 @import '_query';
 
 
