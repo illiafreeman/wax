@@ -1,19 +1,10 @@
 @font-face {
-    font-family: 'f';
-    src: url('../fonts/gothampro.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'f300';
-    src: url('../fonts/gothampro_light.ttf') format('truetype');
-}
-@font-face {
-    font-family: 'f400';
-    src: url('../fonts/gothampro_medium.ttf') format('truetype');
+    font-family: 'fontt';
+    src: url('../fonts/saudagar.ttf') format('opentype');
 }
 
 @import '_var';
 @import '_help';
-
 
 
 
@@ -24,7 +15,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     color: $black;
-    font-family: $f300;
+    font-family: $font;
     font-size: 18px;
     line-height: 21px;
     box-sizing: border-box;
@@ -401,17 +392,14 @@ body{
             line-height: 21px;
         }
     }
-
-    &__desc-desc {
-    }
 }
 .title {
     font-size: 63px;
     line-height: 66px;
     text-transform: uppercase;
     margin-bottom: 40px;
-    font-weight: 600;
-    //font-family: 'f400';
+    font-weight: 400;
+    font-family: 'fontt';
     &_h2 {
         font-size: 45px;
         line-height: 48px;

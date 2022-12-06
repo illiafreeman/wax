@@ -1,8 +1,7 @@
 $transition: all 0.2s ease-in-out;
 $transition05: all 0.5s ease-in-out;
-$f: 'f';
-$f300: 'f300';
-$f400: 'f400';
+$font: 'Lato', sans-serif;
+$fontt: 'fontt', sans-serif;
 
 $black: #272727;
 $green: #709D5C;
@@ -65,7 +64,7 @@ h1, h2, h3, h4, h5, h6{
 input,
 select,
 textarea {
-    font-family: $f300;
+    font-family: $font;
 }
 
 p{
