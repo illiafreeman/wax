@@ -36,21 +36,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         fade: true,
     });
-    $('.more').click(function(){
-        $('body').addClass('oh');
-        $('.modal').addClass('vis');
-        $('.scroll-top').addClass('none');
-    });
-    $('.close').click(function(){
-        $('body').removeClass('oh');
-        $('.modal').removeClass('vis');
-        $('.scroll-top').removeClass('none');
-    });
-    $(".phone").mask("+7 (999) 999-99-99");
-    if($(window).width() > 1023){
-        //alert('asd')
-        
-    }
+
 });
 $( window ).on( "load", function() {
 
