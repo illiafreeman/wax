@@ -442,13 +442,13 @@ body {
   padding-bottom: 120px;
 }
 
-.qwe {
+.claim__desc {
   width: 380px;
   position: relative;
   flex-direction: column;
   text-align: center;
 }
-.qwe::before, .qwe::after {
+.claim__desc::before, .claim__desc::after {
   display: block;
   content: "";
   position: absolute;
@@ -459,23 +459,23 @@ body {
   transform: translate(-50%, -50%);
   transition: all 0.2s ease-in-out;
 }
-.qwe::before {
+.claim__desc::before {
   background: url(../img/ellipse_1.png) no-repeat center center/contain;
 }
-.qwe::after {
+.claim__desc::after {
   background: url(../img/ellipse_2.png) no-repeat center center/contain;
 }
-.qwe:hover::before {
+.claim__desc:hover::before {
   transform: translate(-50%, -50%) rotate(10deg);
 }
-.qwe:hover::after {
+.claim__desc:hover::after {
   transform: translate(-50%, -50%) rotate(-10deg);
 }
-.qwe .form__button {
+.claim__desc .form__button {
   text-align: center;
   display: inline-flex;
 }
-.qwe:after {
+.claim__desc:after {
   content: "";
   display: block;
   position: absolute;
