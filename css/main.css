@@ -3812,6 +3812,7 @@ body {
 .wide {
   width: 1440px;
   margin: 0 auto;
+  color: #fff;
 }
 .wide__container {
   padding: 76px 130px;
@@ -3983,6 +3984,28 @@ body {
   text-align: center;
   position: relative;
   z-index: 10;
+}
+
+.practice__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 70px;
+}
+.practice__item {
+  width: calc(50% - 35px);
+  font-weight: 400;
+  padding-left: 50px;
+  position: relative;
+}
+.practice__item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 29px;
+  height: 29px;
+  background: url(../img/icon_li.svg) no-repeat center center/contain;
+  top: 0px;
+  left: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
