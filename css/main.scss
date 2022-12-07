@@ -210,6 +210,7 @@ body {
 
 .article {
     padding-top: 114px;
+    
 }
 
 .intro {
@@ -347,24 +348,55 @@ body {
 }
 
 .why {
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    &__desc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px 64px;
+    }
 
-    &__desc {}
+    &__item {
+        width: calc(50% - 32px);
+    }
 
-    &__item {}
+    &__item-num {
+        font-family: $fontt;
+        font-size: 98px;
+        line-height: 98px;
+        color: $violet;
+    }
 
-    &__item-num {}
+    &__item-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
 
-    &__item-text {}
+    &__pic {
+        flex: 0 0 405px;
+        position: relative;
+    }
 
-    &__pic {}
-
-    &__pic-img {}
+    &__pic-img {
+        position: relative;
+        z-index: 10;
+    }
 
     &__pic-bg {
+        position: absolute;
+        &_1 {
+            top: 120px;
+            right: 124px;
+        }
 
-        &_1 {}
-
-        &_2 {}
+        &_2 {
+            bottom: 83px;
+            right: 13px;
+        }
     }
 }
 
