@@ -11,7 +11,7 @@
 
 
 /*fixed footer*/
-body{
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -31,26 +31,29 @@ body{
 .footer {
     margin: auto auto 0 auto;
     padding: 60px 0;
-    .container{
+
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    &__copy{
-        a{
+
+    &__copy {
+        a {
             &:before {
                 content: "";
-                
+
                 width: 100%;
                 left: 0;
                 height: 1px;
                 position: absolute;
                 bottom: -5px;
-                
+
                 background: #979797;
                 transition: $transition;
             }
-            &:hover{
+
+            &:hover {
                 &:before {
                     width: 0;
                     right: 0;
@@ -58,7 +61,8 @@ body{
             }
         }
     }
-    &__logo{
+
+    &__logo {
         display: flex;
         width: 180px;
         max-width: 180px;
@@ -68,32 +72,38 @@ body{
         background-size: cover;
     }
 }
+
 /*end fixed footer*/
-.container{
+.container {
     margin: 0 auto;
     width: 1180px;
 }
-.header{
+
+.header {
     position: relative;
     padding: 28px 0 12px;
 }
+
 .header-menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 64px;
+
     &__btn {
         display: none;
     }
 }
-.header-logo{
+
+.header-logo {
     display: flex;
     width: 216px;
     min-width: 216px;
     height: 138px;
     background: url(../img/logo.png) no-repeat center center / cover;
 }
-.header-navgroup{
+
+.header-navgroup {
     display: flex;
     justify-content: flex-end;
     gap: 120px;
@@ -101,11 +111,12 @@ body{
     flex: 1 0 auto;
     justify-content: space-between;
 }
+
 .header-nav {
     display: flex;
     gap: 36px;
     align-items: flex-end;
-    
+
     &__link {
         font-size: 16px;
         line-height: 19px;
@@ -124,8 +135,10 @@ body{
             background: #000;
             transition: $transition;
         }
-        &:hover{
+
+        &:hover {
             color: $black;
+
             &:before {
                 width: 100%;
                 left: 0;
@@ -133,17 +146,20 @@ body{
         }
     }
 }
+
 .header-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+
     &__tel {
         font-size: 18px;
         line-height: 22px;
         color: $black;
         font-weight: 400;
         margin-bottom: 3px;
+
         &:before {
             content: "";
             width: 0;
@@ -154,7 +170,8 @@ body{
             background: #000;
             transition: $transition;
         }
-        &:hover{
+
+        &:hover {
             &:before {
                 width: 100%;
                 left: 0;
@@ -162,14 +179,15 @@ body{
         }
     }
 
-    &__address{
+    &__address {
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
         margin-bottom: 8px;
     }
 }
-.btn{
+
+.btn {
     display: inline-flex;
     height: 40px;
     border-radius: 20px;
@@ -184,9 +202,202 @@ body{
     line-height: 16px;
     transition: $transition;
     background: $violet;
-    &:hover{
+
+    &:hover {
         background: #4D2F51;
     }
+}
+
+.article {}
+
+.intro {
+    display: flex;
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__sub {}
+
+    &__pic {
+        flex: 0 0 390px;
+        position: relative; 
+    }
+
+    &__pic-img {
+        width: 368px;
+        height: 520px;
+        border-radius: 300px;
+        position: relative;
+        z-index: 10;
+        object-fit: cover;
+    }
+
+    &__pic-bg {
+        position: absolute;
+        display: block;
+        bottom: -27px;
+        left: -27px;
+        max-width: 416px;
+    }
+}
+
+.title {
+    font-family: $fontt;
+    font-weight: 400;
+    font-size: 98px;
+    line-height: 104px;
+    margin-bottom: 14px;
+    &_h2 {}
+
+    &_h3 {}
+
+    &_book {}
+}
+
+.btn {}
+
+.welcome {
+
+    &__pic {}
+
+    &__pic-img {}
+
+    &__pic-bg {}
+
+    &__desc {}
+
+    &__sub {}
+}
+
+.advantage {
+
+    &__item {}
+
+    &__pic {}
+
+    &__desc {}
+}
+
+.wide {
+
+    &__container {}
+}
+
+.why {
+
+    &__desc {}
+
+    &__item {}
+
+    &__item-num {}
+
+    &__item-text {}
+
+    &__pic {}
+
+    &__pic-img {}
+
+    &__pic-bg {
+
+        &_1 {}
+
+        &_2 {}
+    }
+}
+
+.claim {
+
+    &__pic {}
+
+    &__desc {}
+
+    &__sub {}
+}
+
+.service {
+
+    &__list {}
+
+    &__item {}
+
+    &__pic {}
+
+    &__pic-bg {
+
+        &_1 {}
+
+        &_2 {}
+
+        &_3 {}
+
+        &_4 {}
+    }
+
+    &__name {}
+}
+
+.practice {
+
+    &__list {}
+
+    &__item {}
+}
+
+.review {
+
+    &_slider {}
+
+    &__name {}
+
+    &__text {}
+}
+
+.slider {}
+
+.client {
+
+    &_slider {}
+
+    &__pic {}
+}
+
+.studio {
+
+    &_slider {}
+
+    &__pic {}
+}
+
+.book {
+
+    &__desc {}
+
+    &__pic {}
+
+    &__pic-img {}
+
+    &__pic-bg {}
+}
+
+.contact {
+
+    &__map {}
+
+    &__desc {}
+
+    &__tel {}
+
+    &__mail {}
+
+    &__address {}
+
+    &__soclist {}
+
+    &__soc {}
+
+    &__socpic {}
 }
 
 
@@ -211,5 +422,3 @@ body{
 
 
 @import '_query';
-
-

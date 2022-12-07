@@ -3704,6 +3704,42 @@ body {
   background: #4D2F51;
 }
 
+.intro {
+  display: flex;
+}
+.intro__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.intro__pic {
+  flex: 0 0 390px;
+  position: relative;
+}
+.intro__pic-img {
+  width: 368px;
+  height: 520px;
+  border-radius: 300px;
+  position: relative;
+  z-index: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.intro__pic-bg {
+  position: absolute;
+  display: block;
+  bottom: -27px;
+  left: -27px;
+  max-width: 416px;
+}
+
+.title {
+  font-family: "fontt", sans-serif;
+  font-weight: 400;
+  font-size: 98px;
+  line-height: 104px;
+  margin-bottom: 14px;
+}
 @media only screen and (max-width: 1200px) {
   .container {
     width: 100%;

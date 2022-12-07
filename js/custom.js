@@ -66,7 +66,16 @@ function remove_hash_from_url() {
             document.title, clean_uri);
     }
 }
+document.addEventListener("mousemove", parallax);
+function parallax(event) {
+  this.querySelectorAll(".move").forEach((shift) => {
+    const position = shift.getAttribute("value");
+    const x = (window.innerWidth - event.pageX * position) / 400;
+    const y = (window.innerHeight - event.pageY * position) / 100;
 
+    shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+  });
+}
 
 
 
