@@ -3797,16 +3797,27 @@ body {
 }
 .advantage__item {
   flex: 0 0 calc(25% - 36px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
 }
+.advantage__desc {
+  text-align: center;
+  color: #fff;
+}
+.advantage__desc b {
+  font-weight: 600;
+}
+
 .wide {
   width: 1440px;
   margin: 0 auto;
-  background: #7D5182;
-  border-radius: 60px;
-  padding: 0;
 }
 .wide__container {
   padding: 76px 130px;
+  background: #7D5182;
+  border-radius: 60px;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -318,21 +318,31 @@ body {
     }
     &__item {
         flex: 0 0 calc(25% - 36px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 34px;
     }
 
     &__pic {}
 
-    &__desc {}
+    &__desc {
+        text-align: center;
+        color: #fff;
+        b{
+            font-weight: 600;
+        }
+    }
 }
 
 .wide {
     width: 1440px;
     margin: 0 auto;
-    background: $violet;
-    border-radius: 60px;
-    padding: 0;
+    
     &__container {
         padding: 76px 130px;
+        background: $violet;
+        border-radius: 60px;
     }
 }
 
