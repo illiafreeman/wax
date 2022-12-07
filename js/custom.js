@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     /*top menu toggle*/
-    
-    $('.hambu').click(function(){
+
+    $('.hambu').click(function () {
         $('.header-navgroup').toggleClass('vis');
         $('body').toggleClass('oh');
         $('#nav-icon4').toggleClass('open');
@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     /*scroll to top*/
     var scrollTop = $(".scroll-top");
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var topPos = $(this).scrollTop();
         if (topPos > 700) {
             $(scrollTop).addClass('vis');
@@ -25,7 +25,7 @@ $(document).ready(function() {
             $(scrollTop).removeClass('vis');
         }
     });
-    $(scrollTop).click(function() {
+    $(scrollTop).click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 800);
@@ -37,11 +37,11 @@ $(document).ready(function() {
         dots: false,
         responsive: [
             {
-            breakpoint: 1168,
+                breakpoint: 1168,
                 settings: {
                     slidesToShow: 1,
                 }
-            }                   
+            }
         ]
     });
     $('#slick_2, #slick_3').slick({
@@ -49,20 +49,20 @@ $(document).ready(function() {
         dots: false,
         responsive: [
             {
-            breakpoint: 1168,
+                breakpoint: 1168,
                 settings: {
                     slidesToShow: 1,
                 }
-            }                   
+            }
         ]
     });
 });
-$( window ).on( "load", function() {
+$(window).on("load", function () {
 
     new WOW().init();
 
 });
-$('.header-nav__link').on('click', function(event) {
+$('.header-nav__link').on('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
         scrollTop: $($anchor.attr('href')).offset().top - 10
@@ -87,13 +87,13 @@ function remove_hash_from_url() {
 }
 document.addEventListener("mousemove", parallax);
 function parallax(event) {
-  this.querySelectorAll(".move").forEach((shift) => {
-    const position = shift.getAttribute("value");
-    const x = (window.innerWidth - event.pageX * position) / 400;
-    const y = (window.innerHeight - event.pageY * position) / 100;
+    this.querySelectorAll(".move").forEach((shift) => {
+        const position = shift.getAttribute("value");
+        const x = (window.innerWidth - event.pageX * position) / 400;
+        const y = (window.innerHeight - event.pageY * position) / 100;
 
-    shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-  });
+        shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    });
 }
 
 

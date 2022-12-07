@@ -429,6 +429,9 @@ body {
         position: relative;
         flex-direction: column;
         text-align: center;
+        .title_h2{
+            width: 100%;
+        }
         &::before, &::after{
             display: block;
             content: '';
@@ -653,6 +656,9 @@ body {
         }
     }
 }
+.move{
+    transition: $transition01;
+}
 .client {
     &__item{
         margin: 0 30px;
@@ -698,14 +704,47 @@ body {
 }
 
 .book {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__desc {
+        position: relative;
+        width: 330px;
+        margin-left: 210px;
+        .title_book{
+            font-size: 35px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        &:before{
+            display: block;
+            content: "";
+            position: absolute;
+            width: 780px;
+            height: 340px;
+            top: 73px;
+            left: 124px;
+            transform: translate(-50%, -50%);
+            background: url(../img/ellipse_book.png) no-repeat center center/contain;
+        }
+    }
 
-    &__desc {}
+    &__pic {
+        flex: 0 0 246px;
+        position: relative;
+    }
 
-    &__pic {}
+    &__pic-img {
+        position: relative;
+        z-index: 10;
+    }
 
-    &__pic-img {}
-
-    &__pic-bg {}
+    &__pic-bg {
+        position: absolute;
+        display: block;
+        bottom: 200px;
+    }
 }
 
 .contact {

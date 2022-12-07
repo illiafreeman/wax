@@ -3900,6 +3900,9 @@ body {
   flex-direction: column;
   text-align: center;
 }
+.claim__desc .title_h2 {
+  width: 100%;
+}
 .claim__desc::before, .claim__desc::after {
   display: block;
   content: "";
@@ -4092,6 +4095,10 @@ body {
   transform: translateX(-5px);
 }
 
+.move {
+  transition: all 0.05s ease-in-out;
+}
+
 .client__item {
   margin: 0 30px;
   display: flex !important;
@@ -4129,6 +4136,47 @@ body {
   border-radius: 160px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.book {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.book__desc {
+  position: relative;
+  width: 330px;
+  margin-left: 210px;
+}
+.book__desc .title_book {
+  font-size: 35px;
+  line-height: 40px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.book__desc:before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 780px;
+  height: 340px;
+  top: 73px;
+  left: 124px;
+  transform: translate(-50%, -50%);
+  background: url(../img/ellipse_book.png) no-repeat center center/contain;
+}
+.book__pic {
+  flex: 0 0 246px;
+  position: relative;
+}
+.book__pic-img {
+  position: relative;
+  z-index: 10;
+}
+.book__pic-bg {
+  position: absolute;
+  display: block;
+  bottom: 200px;
 }
 
 @media only screen and (max-width: 1200px) {
