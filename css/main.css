@@ -3689,7 +3689,6 @@ body {
   height: 40px;
   border-radius: 20px;
   padding: 0 30px;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -3862,6 +3861,63 @@ body {
 .why__pic-bg_2 {
   bottom: 83px;
   right: 13px;
+}
+
+.claim {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.claim .title_h2 {
+  margin-bottom: 5px;
+}
+.claim__pic {
+  flex: 0 0 300px;
+  width: 300px;
+  height: 424px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #7D5182;
+  border-radius: 300px;
+}
+.claim__desc {
+  width: 380px;
+  margin: 0 192px 0 0;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+.claim__desc::before, .claim__desc::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 786px;
+  height: 388px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
+}
+.claim__desc::before {
+  background: url(../img/ellipse_1.png) no-repeat center center/contain;
+}
+.claim__desc::after {
+  background: url(../img/ellipse_2.png) no-repeat center center/contain;
+}
+.claim__desc:hover::before {
+  transform: translate(-50%, -50%) rotate(10deg);
+}
+.claim__desc:hover::after {
+  transform: translate(-50%, -50%) rotate(-10deg);
+}
+.claim__sub {
+  font-size: 18px;
+  line-height: 22px;
+}
+.claim .btn {
+  position: relative;
+  z-index: 10;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -192,7 +192,6 @@ body {
     height: 40px;
     border-radius: 20px;
     padding: 0 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -401,12 +400,62 @@ body {
 }
 
 .claim {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    .title_h2{
+        margin-bottom: 5px;
+    }
+    &__pic {
+        flex: 0 0 300px;
+        width: 300px;
+        height: 424px;
+        object-fit: cover;
+        border: 1px solid #7D5182;
+        border-radius: 300px;
+    }
 
-    &__pic {}
-
-    &__desc {}
-
-    &__sub {}
+    &__desc {
+        width: 380px;
+        margin: 0 192px 0 0;
+        position: relative;
+        flex-direction: column;
+        text-align: center;
+        &::before, &::after{
+            display: block;
+            content: '';
+            position: absolute;
+            width: 786px;
+            height: 388px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: $transition;
+        }
+        &::before{
+            background: url(../img/ellipse_1.png) no-repeat center center / contain;
+        }
+        &::after{
+            background: url(../img/ellipse_2.png) no-repeat center center / contain;
+        }
+        &:hover{
+            &::before{
+                transform: translate(-50%, -50%) rotate(10deg);
+            }
+            &::after{
+                transform: translate(-50%, -50%) rotate(-10deg);
+            }
+        }
+    }
+    &__sub {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .btn{
+        position: relative;
+        z-index: 10;
+    }
 }
 
 .service {
