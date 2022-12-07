@@ -262,6 +262,7 @@ body {
         font-size: 46px;
         line-height: 52px;
         margin-bottom: 68px;
+        width: 537px;
     }
 
     &_h3 {}
@@ -570,8 +571,12 @@ body {
 
 .review {
 
-    &_slider {}
-
+    &_slider {
+        margin-bottom: 48px;
+    }
+    &__item{
+        margin: 0 13px;
+    }
     &__name {}
 
     &__text {}

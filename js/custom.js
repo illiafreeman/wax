@@ -33,8 +33,16 @@ $(document).ready(function() {
     });
     /*end scroll to top*/
     $('#slick_1').slick({
-        slidesToShow: 1,
-        fade: true,
+        slidesToShow: 4,
+        dots: false,
+        responsive: [
+            {
+            breakpoint: 1168,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }                   
+        ]
     });
 
 });
