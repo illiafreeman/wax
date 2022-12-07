@@ -208,17 +208,26 @@ body {
     }
 }
 
-.article {}
+.article {
+    padding-top: 114px;
+}
 
 .intro {
     display: flex;
+    padding: 0;
+    justify-content: space-between;
+    gap: 40px;
     &__desc {
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: flex-start;
     }
 
-    &__sub {}
+    &__sub {
+        width: 440px;
+        margin-bottom: 36px;
+    }
 
     &__pic {
         flex: 0 0 390px;
@@ -249,7 +258,11 @@ body {
     font-size: 98px;
     line-height: 104px;
     margin-bottom: 14px;
-    &_h2 {}
+    &_h2 {
+        font-size: 46px;
+        line-height: 52px;
+        margin-bottom: 68px;
+    }
 
     &_h3 {}
 
@@ -259,21 +272,53 @@ body {
 .btn {}
 
 .welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 184px;
+    .title_h2{
+        margin-bottom: 22px;
+    }
+    &__pic {
+        flex: 0 0 396px;
+        position: relative;
+    }
 
-    &__pic {}
+    &__pic-img {
+        width: 396px;
+        height: 396px;
+        border-radius: 50%;
+        z-index: 10;
+        position: relative;
+        object-fit: cover;
+    }
 
-    &__pic-img {}
-
-    &__pic-bg {}
+    &__pic-bg {
+        position: absolute;
+        display: block;
+        top: -18px;
+        right: -27px;
+        max-width: 396px;
+    }
 
     &__desc {}
 
-    &__sub {}
+    &__sub {
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .advantage {
-
-    &__item {}
+    &__list{
+        display: flex;
+        justify-content: space-between;
+        gap: 48px;
+    }
+    &__item {
+        flex: 0 0 calc(25% - 36px);
+    }
 
     &__pic {}
 
@@ -281,8 +326,14 @@ body {
 }
 
 .wide {
-
-    &__container {}
+    width: 1440px;
+    margin: 0 auto;
+    background: $violet;
+    border-radius: 60px;
+    padding: 0;
+    &__container {
+        padding: 76px 130px;
+    }
 }
 
 .why {
