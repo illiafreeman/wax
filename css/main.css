@@ -4179,6 +4179,83 @@ body {
   bottom: 200px;
 }
 
+.contact {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 60px;
+  overflow: hidden;
+}
+.contact.wide {
+  padding: 0;
+  margin: 114px auto;
+}
+.contact__map {
+  width: 630px;
+  min-width: 630px;
+}
+.contact__desc {
+  flex: 1 0 auto;
+  background: #7D5182;
+  color: #fff;
+  padding: 76px 100px;
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+}
+.contact__desc .title_h2 {
+  margin-bottom: 30px;
+}
+.contact__tel, .contact__mail {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  margin-bottom: 8px;
+}
+.contact__tel:before, .contact__mail:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  background: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.contact__tel:hover:before, .contact__mail:hover:before {
+  width: 100%;
+  left: 0;
+}
+.contact__mail {
+  margin-bottom: 26px;
+}
+.contact__address {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+.contact__soclist {
+  display: flex;
+  gap: 12px;
+}
+.contact__soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+}
+.contact__soc:hover .contact__socpic {
+  transform: scale(1.1);
+}
+.contact__socpic {
+  fill: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
 @media only screen and (max-width: 1200px) {
   .container {
     width: 100%;

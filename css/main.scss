@@ -748,22 +748,91 @@ body {
 }
 
 .contact {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 60px;
+    overflow: hidden;
+    &.wide{
+        padding: 0;
+        margin: 114px auto;
+    }
+    &__map {
+        width: 630px;
+        min-width: 630px;
+    }
 
-    &__map {}
+    &__desc {
+        flex: 1 0 auto;
+        background: $violet;
+        color: #fff;
+        padding: 76px 100px;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        .title_h2{
+            margin-bottom: 30px;
+        }
+    }
 
-    &__desc {}
+    &__tel, &__mail {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #fff;
+        position: relative;
+        margin-bottom: 8px;
+        &:before {
+            content: "";
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            background: #fff;
+            transition: $transition;
+        }
+        &:hover{
+            &:before {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
 
-    &__tel {}
+    &__mail {
+        margin-bottom: 26px;
+    }
 
-    &__mail {}
+    &__address {
+        font-size: 18px;
+        line-height: 22px;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
 
-    &__address {}
+    &__soclist {
+        display: flex;
+        gap: 12px;
+    }
 
-    &__soclist {}
+    &__soc {
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        width: 38px;
+        height: 38px;
+        &:hover{
+            .contact__socpic {
+                transform: scale(1.1);
+            }
+        }
+    }
 
-    &__soc {}
-
-    &__socpic {}
+    &__socpic {
+        fill: #fff;
+        transition: $transition;
+    }
 }
 
 
