@@ -570,20 +570,82 @@ body {
 }
 
 .review {
-
-    &_slider {
-        margin-bottom: 48px;
-    }
     &__item{
         margin: 0 13px;
+        border: 1px solid #7D5182;
+        border-radius: 150px;
+        height: auto;
+        padding: 80px 20px;
+        text-align: center;
     }
-    &__name {}
-
-    &__text {}
+    &__name {
+        font-size: 30px;
+        line-height: 36px;
+        font-family: $fontt;
+        color: $violet;
+        margin-bottom: 10px;
+        height: 74px;
+        overflow: hidden;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
 }
 
-.slider {}
-
+.slider {
+    padding: 0 20px;
+    &_review{
+        margin-bottom: 48px;
+        .slick-track{
+            display: flex;
+        }
+    }
+}
+.slick-prev, .slick-next{
+    padding: 0;
+    border: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        width: 14px;
+        height: 25px;
+        transition: $transition;
+        fill: $violet;
+    }
+    
+    &:before, &:after{
+        display: none;
+    }
+    &:hover{
+        svg{
+            fill: $black;
+        }
+    }
+}
+.slick-next{
+    right: -9px;
+    svg{
+        transform: rotate(180deg);
+    }
+    &:hover{
+        svg{
+            transform: rotate(180deg) translateX(-5px);
+        }
+    }
+}
+.slick-prev{
+    left: -9px;
+    &:hover{
+        svg{
+            transform: translateX(-5px);
+        }
+    }
+}
 .client {
 
     &_slider {}
