@@ -3,9 +3,9 @@ $transition05: all 0.5s ease-in-out;
 $font: 'Lato', sans-serif;
 $fontt: 'fontt', sans-serif;
 
-$black: #272727;
-$green: #709D5C;
-$white: #fff;
+$black: #000;
+$violet: #7D5182;
+
 
 
 
@@ -85,7 +85,7 @@ a:active{
     text-decoration: none;
     position: relative;
     transition: $transition;
-    color: $black;
+    //color: $black;
 }
 
 ul{
