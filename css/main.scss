@@ -460,14 +460,38 @@ body {
 
 .service {
 
-    &__list {}
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+    }
 
-    &__item {}
+    &__item {
+        width: calc(20% - 28px);
+        border: 1px solid #7D5182;
+        border-radius: 300px;
+        padding: 20px 30px 50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex; 
+        gap: 30px;
+    }
 
-    &__pic {}
-
+    &__pic {
+        width: 126px;
+        height: 194px;
+        align-items: center;
+        justify-content: center;
+        display: flex; 
+        position: relative;
+    }
+    &__pic-img{
+        position: relative;
+        z-index: 10;
+    }
     &__pic-bg {
-
+        position: absolute;
         &_1 {}
 
         &_2 {}
@@ -477,7 +501,12 @@ body {
         &_4 {}
     }
 
-    &__name {}
+    &__name {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
 }
 
 .practice {
