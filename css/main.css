@@ -4023,12 +4023,14 @@ body {
 }
 .review__name {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 42px;
   font-family: "fontt", sans-serif;
   color: #7D5182;
   margin-bottom: 10px;
-  height: 74px;
+  height: 46px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .review__text {
   font-size: 18px;
@@ -4082,6 +4084,24 @@ body {
 }
 .slick-prev:hover svg {
   transform: translateX(-5px);
+}
+
+.client__item {
+  margin: 0 30px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.client__pic {
+  width: 314px;
+  height: 314px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.client .slick-prev svg, .client .slick-next svg {
+  fill: #fff;
 }
 
 @media only screen and (max-width: 1200px) {

@@ -580,12 +580,14 @@ body {
     }
     &__name {
         font-size: 30px;
-        line-height: 36px;
+        line-height: 42px;
         font-family: $fontt;
         color: $violet;
         margin-bottom: 10px;
-        height: 74px;
+        height: 46px;
         overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &__text {
         font-size: 18px;
@@ -647,10 +649,24 @@ body {
     }
 }
 .client {
-
-    &_slider {}
-
-    &__pic {}
+    &__item{
+        margin: 0 30px;
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    &__pic {
+        width: 314px;
+        height: 314px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        object-fit: cover
+    }
+    .slick-prev, .slick-next{
+        svg{
+            fill: #fff;
+        }
+    }
 }
 
 .studio {

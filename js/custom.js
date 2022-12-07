@@ -44,7 +44,18 @@ $(document).ready(function() {
             }                   
         ]
     });
-
+    $('#slick_2').slick({
+        slidesToShow: 3,
+        dots: false,
+        responsive: [
+            {
+            breakpoint: 1168,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }                   
+        ]
+    });
 });
 $( window ).on( "load", function() {
 
