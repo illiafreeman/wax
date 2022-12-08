@@ -3554,35 +3554,91 @@ body {
 
 .footer {
   margin: auto auto 0 auto;
-  padding: 60px 0;
 }
 .footer .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 74px;
 }
-.footer__copy a:before {
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 42px;
+}
+.footer__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+  transform: translateY(16px);
+  width: calc(50% - 148px - 42px);
+}
+.footer__nav:last-child {
+  justify-content: flex-start;
+}
+.footer__nav-link {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  position: relative;
+  color: #7D5182;
+}
+.footer__nav-link:before {
   content: "";
-  width: 100%;
-  left: 0;
+  width: 0;
   height: 1px;
   position: absolute;
   bottom: -5px;
-  background: #979797;
+  right: 0;
+  background: #000;
   transition: all 0.2s ease-in-out;
+}
+.footer__nav-link:hover {
+  color: #000;
+}
+.footer__nav-link:hover:before {
+  width: 100%;
+  left: 0;
+}
+.footer__logo {
+  width: 296px;
+  height: 145px;
+  background: url(../img/logo.png) no-repeat center center/contain;
+  display: flex;
+}
+.footer__copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding-bottom: 32px;
+}
+.footer__copy a {
+  text-transform: uppercase;
+  position: relative;
+  color: #7D5182;
+}
+.footer__copy a:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  bottom: -2px;
+  background: #C4A7C8;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  right: 0;
+}
+.footer__copy a:hover {
+  color: #000;
 }
 .footer__copy a:hover:before {
   width: 0;
-  right: 0;
-}
-.footer__logo {
-  display: flex;
-  width: 180px;
-  max-width: 180px;
-  height: 180px;
-  background-image: url(../img/logo.png);
-  background-position: center center;
-  background-size: cover;
+  left: 0;
 }
 
 /*end fixed footer*/
@@ -4187,7 +4243,7 @@ body {
 }
 .contact.wide {
   padding: 0;
-  margin: 114px auto;
+  margin: 114px auto 122px;
 }
 .contact__map {
   width: 630px;
@@ -4250,6 +4306,7 @@ body {
 }
 .contact__soc:hover .contact__socpic {
   transform: scale(1.1);
+  fill: #AECBE6;
 }
 .contact__socpic {
   fill: #fff;
