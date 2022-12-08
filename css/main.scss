@@ -610,7 +610,6 @@ body {
 
     &__item {
         width: calc(50% - 35px);
-        font-weight: 400;
         padding-left: 50px;
         position: relative;
         &:after{
@@ -824,7 +823,6 @@ body {
     }
 
     &__tel, &__mail {
-        font-weight: 400;
         font-size: 20px;
         line-height: 24px;
         text-transform: uppercase;

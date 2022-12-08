@@ -1,10 +1,15 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1500px) {
+    .wide {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1280px) {
     body {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 17px;
     }
     .container {
-        width: 100%;
+        width: 360px;
         padding-left: 20px !important;
         padding-right: 20px !important;
     }
@@ -116,10 +121,72 @@
         left: 4px;
     }
 
-    
-    .footer {
-        width: 100%;
+    .article {
+        padding-top: 54px;
     }
+    .title {
+        font-size: 37px;
+        line-height: 43px;
+        margin-bottom: 8px;
+    }
+    .intro{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+        padding: 0;
+    }
+    .intro__sub {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .intro__desc{
+        align-items: center;
+        order: 2;
+    }
+    .intro__pic {
+        flex: 0 0 170px;
+        order: 1;
+    }
+    .intro__pic-img {
+        width: 170px;
+        height: 240px;
+    }
+    .intro__pic-bg {
+        bottom: -7px;
+        left: -13px;
+        max-width: 200px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
