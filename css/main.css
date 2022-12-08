@@ -4316,7 +4316,7 @@ body {
 
 @media only screen and (max-width: 1500px) {
   .wide {
-    width: 100%;
+    width: 360px;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -4657,5 +4657,70 @@ body {
   .service__pic-img {
     max-height: 100%;
     max-width: 90px;
+  }
+  .practice .title_h2 {
+    margin-bottom: 22px;
+  }
+  .practice__item {
+    width: 100%;
+    padding-left: 28px;
+  }
+  .practice__item:after {
+    width: 17px;
+    height: 17px;
+    top: 2px;
+    left: 0;
+  }
+  .practice__list {
+    gap: 18px;
+  }
+  .review .title_h2 {
+    margin-bottom: 30px;
+  }
+  .slider_review .slick-track {
+    display: block;
+  }
+  .review__item {
+    border-radius: 150px;
+    padding: 80px 20px;
+  }
+  .review__name {
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    margin-bottom: 0;
+  }
+  .review__text {
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 60px;
+  }
+  .slider_review {
+    margin-bottom: 28px;
+    padding: 0 40px;
+  }
+  .client {
+    text-align: center;
+  }
+  .client .title_h2 {
+    margin-bottom: 30px;
+  }
+  .client__pic {
+    width: 204px;
+    height: 204px;
+  }
+  .studio .title_h3 {
+    margin-bottom: 38px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .studio .title_h2 {
+    margin-bottom: 12px;
+  }
+  .studio__pic {
+    height: 248px;
+  }
+  .studio__item {
+    margin: 0 40px;
   }
 }/*# sourceMappingURL=main.css.map */

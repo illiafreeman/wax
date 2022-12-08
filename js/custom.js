@@ -37,9 +37,10 @@ $(document).ready(function () {
         dots: false,
         responsive: [
             {
-                breakpoint: 1168,
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 1,
+                    adaptiveHeight: true
                 }
             }
         ]
@@ -49,7 +50,7 @@ $(document).ready(function () {
         dots: false,
         responsive: [
             {
-                breakpoint: 1168,
+                breakpoint: 1280,
                 settings: {
                     slidesToShow: 1,
                 }
