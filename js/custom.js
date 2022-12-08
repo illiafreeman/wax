@@ -2,15 +2,15 @@ $(document).ready(function () {
 
     /*top menu toggle*/
 
-    $('.hambu').click(function () {
+    $('.header-menu__btn').click(function () {
         $('.header-navgroup').toggleClass('vis');
         $('body').toggleClass('oh');
-        $('#nav-icon4').toggleClass('open');
+        $('#hamburger').toggleClass('open');
     });
     $('.menu').click(function () {
         $('.header-navgroup').removeClass('vis');
         $('body').removeClass('oh');
-        $('#nav-icon4').removeClass('open');
+        $('#hamburger').removeClass('open');
     });
 
     /*end top menu toggle*/
