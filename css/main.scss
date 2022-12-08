@@ -809,6 +809,7 @@ body {
     &__map {
         width: 630px;
         min-width: 630px;
+        
     }
 
     &__desc {
@@ -882,6 +883,7 @@ body {
     &__socpic {
         fill: #fff;
         transition: $transition;
+        height: 100%;
     }
 }
 

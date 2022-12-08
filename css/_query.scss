@@ -420,14 +420,145 @@
     .studio__item {
         margin: 0 40px;
     }
-
-
-
-
-
-
-
-
+    .slick-prev:hover svg, .slick-next:hover svg {
+        fill: $violet;
+    }
+    .slick-next:hover svg {
+        transform: rotate(180deg);
+    }
+    .slick-prev:hover svg {
+        transform: none;
+    }
+    .client .slick-prev:hover svg, .client .slick-next:hover svg {
+        fill: #fff;
+    }
+    .book{
+        flex-direction: column;
+        padding-top: 124px; 
+        
+    }
+    .book__desc {
+        width: 194px;
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 36px;
+        .title_book{
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .btn {
+            height: 32px;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 0 20px;
+        }
+        &:before {
+            width: 343px;
+            height: 366px;
+            top: 73px;
+            left: 97px;
+            transform: translate(-50%, -50%);
+            background: url(../img/ellipse_book_min.png) no-repeat center center/contain;
+        }
+    }
+    .book__pic {
+        flex: 0 0 140px;
+        width: 140px;
+        transform: scaleX(-1);
+        align-self: flex-start;
+    }
+    .book__pic-bg {
+        bottom: 0;
+        
+    }
+    .contact.wide {
+        padding: 0;
+        margin: 54px auto;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+    .contact__map {
+        width: 100%;
+        min-width: 100%;
+        order: 2;
+        height: 276px;
+    }
+    .contact__desc{
+        order: 1;
+        padding: 38px 20px;
+        align-items: center;
+        text-align: center;
+        .title_h2{
+            
+        }
+    }
+    .contact__tel{
+        font-size: 16px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+    .contact__mail {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 38px;
+    }
+    .contact__address {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 38px;
+    }
+    .contact__soc {
+        width: 30px;
+        height: 30px;
+    }
+    .contact__soclist {
+        gap: 16px;
+    }
+    .contact__soc:hover .contact__socpic{
+        transform: none;
+        fill: #fff;
+    }
+    .footer__menu{
+        flex-direction: column;
+        gap: 0;
+    }
+    .footer__logo{
+        order: 1;
+    }
+    .footer__nav:first-child{
+        order: 2;
+        margin-bottom: 14px;
+    }
+    .footer__nav:last-child{
+        order: 3;
+    }
+    .footer__nav{
+        flex-direction: column;
+        transform: none;
+        width: 100%;
+        gap: 14px;
+    }
+    .footer__nav-link {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .footer__logo {
+        width: 120px;
+        height: 80px;
+        margin-bottom: 14px;
+    }
+    .footer .container{
+        gap: 38px;
+    }
+    .footer__copy {
+        font-size: 10px;
+        line-height: 12px;
+        padding-bottom: 24px;
+    }
 
 
 
