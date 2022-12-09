@@ -1,6 +1,10 @@
 @media only screen and (max-width: 1500px) {
     .wide {
-        width: 360px;
+        width: 100%;
+    }
+    .client__pic {
+        width: 300px;
+        height: 300px;
     }
 }
 @media only screen and (max-width: 1280px) {
@@ -88,7 +92,9 @@
         gap: 24px;
         text-align: right;
     }
-
+    .wide {
+        width: 360px;
+    }
 
 
     #hamburger {
