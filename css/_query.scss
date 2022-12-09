@@ -150,7 +150,7 @@
     .title {
         font-size: 37px;
         line-height: 43px;
-        margin-bottom: 8px;
+        margin-bottom: 14px;
     }
     .intro{
         flex-direction: column;
@@ -198,7 +198,7 @@
         max-width: 193px;
     }
     .welcome .title_h2 {
-        margin-bottom: 8px;
+        margin-bottom: 16px;
     }
     .title_h2 {
         font-size: 30px;
@@ -213,7 +213,7 @@
     .advantage__list {
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 40px;
         align-items: center;
     }
     .advantage__pic{
@@ -372,7 +372,7 @@
     }
     .practice{
         .title_h2{
-            margin-bottom: 22px;
+            margin-bottom: 26px;
         }
     }
     .practice__item {
@@ -381,7 +381,7 @@
         &:after {
             width: 17px;
             height: 17px;
-            top: 2px;
+            top: 4px;
             left: 0;
         }
     }
@@ -407,8 +407,7 @@
         margin-bottom: 0;
     }
     .review__text {
-        font-size: 14px;
-        line-height: 17px;
+        @include font_min();
         min-height: 60px;
     }
     .slider_review {
@@ -427,8 +426,7 @@
     }
     .studio .title_h3 {
         margin-bottom: 38px;
-        font-size: 14px;
-        line-height: 17px;
+        @include font_min();
     }
     .studio .title_h2 {
         margin-bottom: 12px;
@@ -562,13 +560,13 @@
         gap: 14px;
     }
     .footer__nav-link {
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 16px;
+        line-height: 19px;
     }
     .footer__logo {
         width: 120px;
         height: 80px;
-        margin-bottom: 14px;
+        margin-bottom: 36px;
     }
     .footer .container{
         gap: 38px;
@@ -593,14 +591,14 @@
 }
 
 @media only screen and (max-width: 600px) {
-
-}
-
-@media only screen and (max-width: 360px) {
     .wide {
         width: 100%;
     }
     .container {
         width: 100%;
     }
+}
+
+@media only screen and (max-width: 360px) {
+    
 }
