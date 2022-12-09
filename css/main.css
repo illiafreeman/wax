@@ -4579,16 +4579,16 @@ body {
     line-height: 30px;
   }
   .claim__desc .claim__sub {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 20px;
     margin-bottom: 10px;
   }
   .claim__desc .claim__sub b {
     font-weight: 600;
   }
   .claim__desc:before, .claim__desc:after {
-    width: 276px;
-    height: 304px;
+    width: 100vw;
+    height: 388px;
   }
   .claim__desc:before {
     background: url(../img/ellipse_1_min.png) no-repeat center center/contain;
@@ -4617,7 +4617,7 @@ body {
     justify-content: center;
   }
   .service__item {
-    width: calc(50% - 5px);
+    width: 140px;
     padding: 24px 24px 30px;
     gap: 20px;
     border-radius: 194px;
@@ -4666,8 +4666,8 @@ body {
     transform: none;
   }
   .service__name {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .service__pic {
     width: 100%;
@@ -4883,5 +4883,10 @@ body {
   }
   .container {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .service__item {
+    width: calc(50% - 5px);
   }
 }/*# sourceMappingURL=main.css.map */

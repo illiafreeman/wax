@@ -63,15 +63,15 @@ $(window).on("load", function () {
     new WOW().init();
 
 });
-$('.header-nav__link').on('click', function (event) {
+$('.header-nav__link, .footer__nav-link').on('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 10
+        scrollTop: $($anchor.attr('href')).offset().top
     }, 1500, 'easeInOutExpo');
     remove_hash_from_url();
     $('.header-navgroup').removeClass('vis');
     $('body').removeClass('oh');
-    $('#nav-icon4').removeClass('open');
+    $('#hamburger').removeClass('open');
     event.preventDefault();
     //remove_hash_from_url();
 });
