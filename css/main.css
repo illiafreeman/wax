@@ -4362,12 +4362,11 @@ body {
     overflow-y: auto;
     justify-content: flex-start;
     background: #F8F8F8;
-    padding: 46px 24px 60px 20px;
+    padding: 0 24px;
     gap: 70px;
     z-index: 100;
-    border-top: 1px solid #DDBAE1;
-    border-bottom: 4px solid #B48BB9;
-    transition: all 0.2s ease-in-out;
+    box-shadow: 0 1px 0px #DDBAE1 inset, 0 -4px 0px #B48BB9 inset;
+    transition: all 0.5s ease-in-out;
   }
   .header-navgroup.vis {
     top: 102px;
@@ -4394,6 +4393,7 @@ body {
   .header-nav {
     flex-direction: column;
     gap: 24px;
+    margin-top: 46px;
   }
   .header-contact {
     align-items: flex-end;
