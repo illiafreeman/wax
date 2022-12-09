@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 1500px) {
     .wide {
         width: 100%;
@@ -9,8 +11,7 @@
 }
 @media only screen and (max-width: 1280px) {
     body {
-        font-size: 14px;
-        line-height: 17px;
+        @include font_min();
     }
     .container {
         width: 360px;
@@ -243,8 +244,7 @@
         width: 100%;
     }      
     .why__item-text {
-        font-size: 14px;
-        line-height: 17px;
+        @include font_min();
     }
     .why__item-num {
         font-size: 64px;

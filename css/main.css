@@ -4326,8 +4326,8 @@ body {
 }
 @media only screen and (max-width: 1280px) {
   body {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .container {
     width: 360px;
@@ -4553,8 +4553,8 @@ body {
     width: 100%;
   }
   .why__item-text {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
   }
   .why__item-num {
     font-size: 64px;

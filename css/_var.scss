@@ -35,7 +35,10 @@ $violet: #7D5182;
     display: block;
     position: absolute;
 }
-
+@mixin font_min(){
+    font-size: 18px;
+    line-height: 22px;
+}
 
 
 *{
