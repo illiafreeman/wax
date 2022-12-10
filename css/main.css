@@ -3534,7 +3534,6 @@ table th, table td {
   animation-name: slideOutUp;
 }
 
-/*fixed footer*/
 body {
   display: flex;
   flex-direction: column;
