@@ -67,7 +67,7 @@ body {
             position: absolute;
             bottom: -5px;
             right: 0;
-            background: #000;
+            background: $black;
             transition: $transition;
         }
         &:hover{
@@ -180,7 +180,7 @@ body {
             position: absolute;
             bottom: -5px;
             right: 0;
-            background: #000;
+            background: $black;
             transition: $transition;
         }
 
@@ -215,7 +215,7 @@ body {
             position: absolute;
             bottom: -2px;
             right: 0;
-            background: #000;
+            background: $black;
             transition: $transition;
         }
 

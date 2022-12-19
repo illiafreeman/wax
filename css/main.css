@@ -3539,7 +3539,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
-  color: #000;
+  color: #202020;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -3592,11 +3592,11 @@ body {
   position: absolute;
   bottom: -5px;
   right: 0;
-  background: #000;
+  background: #202020;
   transition: all 0.2s ease-in-out;
 }
 .footer__nav-link:hover {
-  color: #000;
+  color: #202020;
 }
 .footer__nav-link:hover:before {
   width: 100%;
@@ -3633,7 +3633,7 @@ body {
   right: 0;
 }
 .footer__copy a:hover {
-  color: #000;
+  color: #202020;
 }
 .footer__copy a:hover:before {
   width: 0;
@@ -3698,11 +3698,11 @@ body {
   position: absolute;
   bottom: -5px;
   right: 0;
-  background: #000;
+  background: #202020;
   transition: all 0.2s ease-in-out;
 }
 .header-nav__link:hover {
-  color: #000;
+  color: #202020;
 }
 .header-nav__link:hover:before {
   width: 100%;
@@ -3718,7 +3718,7 @@ body {
 .header-contact__tel {
   font-size: 18px;
   line-height: 22px;
-  color: #000;
+  color: #202020;
   font-weight: 400;
   margin-bottom: 3px;
 }
@@ -3729,7 +3729,7 @@ body {
   position: absolute;
   bottom: -2px;
   right: 0;
-  background: #000;
+  background: #202020;
   transition: all 0.2s ease-in-out;
 }
 .header-contact__tel:hover:before {
@@ -4132,7 +4132,7 @@ body {
   display: none;
 }
 .slick-prev:hover svg, .slick-next:hover svg {
-  fill: #000;
+  fill: #202020;
 }
 
 .slick-next {
@@ -4349,7 +4349,7 @@ body {
   border-radius: 40px;
   font-size: 24px;
   line-height: 52px;
-  color: #000;
+  color: #202020;
   transition: all 0.2s ease-in-out;
   font-weight: 400;
 }
@@ -4984,7 +4984,7 @@ body {
     overflow: hidden;
     overflow-x: auto;
     gap: 5px;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
   }
   .tab__btn {
     padding: 0px 16px;
