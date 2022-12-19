@@ -58,11 +58,7 @@ $(document).ready(function () {
         ]
     });
 });
-$(window).on("load", function () {
 
-    new WOW().init();
-
-});
 $('.header-nav__link, .footer__nav-link').on('click', function (event) {
     var $anchor = $(this);
     $('html, body').stop().animate({

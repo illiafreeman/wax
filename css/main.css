@@ -4890,6 +4890,20 @@ body {
     line-height: 12px;
     padding-bottom: 24px;
   }
+  .about h1.title {
+    display: none;
+  }
+  .about {
+    display: flex;
+    padding: 54px 0;
+  }
+  .about .welcome__pic {
+    float: none;
+    margin-left: 0;
+  }
+  .about .welcome__sub + .title_h2 {
+    margin-top: 38px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .wide {
