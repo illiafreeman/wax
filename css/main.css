@@ -4225,6 +4225,7 @@ body {
 .book__pic {
   flex: 0 0 246px;
   position: relative;
+  transition: all 0.2s ease-in-out;
 }
 .book__pic-img {
   position: relative;

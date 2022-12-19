@@ -782,6 +782,7 @@ body {
     &__pic {
         flex: 0 0 246px;
         position: relative;
+        transition: $transition;
     }
 
     &__pic-img {
