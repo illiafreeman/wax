@@ -4966,6 +4966,48 @@ body {
   .inner .welcome__sub + .title_h2 {
     margin-top: 38px;
   }
+  .inner_price {
+    display: block;
+  }
+  .inner_price h1.title_inner {
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 34px;
+  }
+  .tab {
+    overflow: hidden;
+    overflow-x: auto;
+    gap: 5px;
+    margin-bottom: 34px;
+  }
+  .tab__btn {
+    padding: 0px 16px;
+    height: 32px;
+    border-radius: 40px;
+    font-size: 16px;
+    line-height: 16px;
+    white-space: nowrap;
+  }
+  .tab__content.active {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .price__col {
+    width: 100%;
+  }
+  .price {
+    margin-bottom: 32px;
+  }
+  .price__name, .price__cost {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+  .price__title {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
 }
 @media only screen and (max-width: 600px) {
   .wide {
