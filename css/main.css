@@ -4314,6 +4314,21 @@ body {
   height: 100%;
 }
 
+.about {
+  display: block;
+  padding: 90px 0 122px;
+}
+.about .welcome__pic {
+  float: right;
+  margin-left: 100px;
+}
+.about h1.title {
+  margin-bottom: 54px;
+}
+.about .welcome__sub + .title_h2 {
+  margin-top: 68px;
+}
+
 @media only screen and (max-width: 1500px) {
   .wide {
     width: 100%;

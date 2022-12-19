@@ -885,7 +885,20 @@ body {
         height: 100%;
     }
 }
-
+.about{
+    display: block;
+    padding: 90px 0 122px;
+    .welcome__pic{
+        float: right;
+        margin-left: 100px;
+    }
+    h1.title{
+        margin-bottom: 54px;
+    }
+    .welcome__sub+.title_h2{
+        margin-top: 68px;
+    }
+}
 
 
 
