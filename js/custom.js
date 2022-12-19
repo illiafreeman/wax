@@ -32,31 +32,7 @@ $(document).ready(function () {
         return false;
     });
     /*end scroll to top*/
-    $('#slick_1').slick({
-        slidesToShow: 4,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 1,
-                    adaptiveHeight: true
-                }
-            }
-        ]
-    });
-    $('#slick_2, #slick_3').slick({
-        slidesToShow: 3,
-        dots: false,
-        responsive: [
-            {
-                breakpoint: 1280,
-                settings: {
-                    slidesToShow: 1,
-                }
-            }
-        ]
-    });
+    
 });
 
 $('.header-nav__link, .footer__nav-link').on('click', function (event) {

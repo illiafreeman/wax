@@ -899,8 +899,23 @@ body {
         margin-top: 68px;
     }
 }
-
-
+.price {
+}
+.title {
+}
+.tab {
+    &__item {}
+    &__btn {}
+    &__wrap {}
+    &__content {
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+}
+.active {
+}
 
 
 

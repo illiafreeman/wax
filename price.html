@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Our prices</title>
+
+
+
+    <link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="mask-icon" href="./img/safari-pinned-tab.svg" color="#7d5182">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+
+
+    <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body class="">
+    <header class="header">
+        <div class="container">
+            <div class="header-menu">
+                <a href="" class="header-logo"></a>
+                <div class="header-navgroup">
+                    <nav class="header-nav">
+                        <a class="header-nav__link" href="#">Prices & Services</a>
+                        <a class="header-nav__link" href="#">FAQs</a>
+                        <a class="header-nav__link" href="#about">about</a>
+                        <a class="header-nav__link" href="#contact">Contact Us</a>
+                    </nav>
+                    <nav class="header-contact">
+                        <a class="header-contact__tel" href="tel:+9199260825">(919) 926-0825</a>
+                        <div class="header-contact__address">7417 Knightdale Blvd, Suite 101.<br>Knightdale, NC 27545
+                        </div>
+                        <a href="" class="btn">book now</a>
+                    </nav>
+                </div>
+                <div class="header-menu__btn">
+                    <div id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <article class="article price">
+                <h1 class="title">Our prices</h1>
+                <ul class="tab" id="tab">
+                    <li class="tab__item active"><a class="tab__btn" href="#tab_1" data-toggle="tab">Facials</a></li>
+                    <li class="tab__item"><a class="tab__btn" href="#tab_2" data-toggle="tab">Chemical peels</a></li>
+                    <li class="tab__item"><a class="tab__btn" href="#tab_3" data-toggle="tab">Face wax</a></li>
+                    <li class="tab__item"><a class="tab__btn" href="#tab_4" data-toggle="tab">Body wax</a></li>
+                    <li class="tab__item"><a class="tab__btn" href="#tab_5" data-toggle="tab">Men’s wax</a></li>
+                    <li class="tab__item"><a class="tab__btn" href="#tab_6" data-toggle="tab">Combos</a></li>
+                </ul>
+                <div class="tab__wrap">
+                    <div class="tab__content active" id="tab_1">.1..</div>
+                    <div class="tab__content" id="tab_2">..2.</div>
+                    <div class="tab__content" id="tab_3">..3.</div>
+                    <div class="tab__content" id="tab_4">.4..</div>
+                    <div class="tab__content" id="tab_5">.5..</div>
+                    <div class="tab__content" id="tab_6">.6..</div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__menu">
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#">Menu</a>
+                    <a class="footer__nav-link" href="#">Policies</a>
+                    <a class="footer__nav-link" href="#">Prices & Services</a>
+                </nav>
+                <a href="#" class="footer__logo"></a>
+                <nav class="footer__nav">
+                    <a class="footer__nav-link" href="#">FAQs</a>
+                    <a class="footer__nav-link" href="#about">About</a>
+                    <a class="footer__nav-link" href="#contact">Contacts</a>
+                </nav>
+            </div>
+            <div class="footer__copy">
+                © 2022 queen.<div class="footer__copylink">&nbsp;designed by <a href="https://web-off.ru"
+                        target="_blank">web-off.ru</a></div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $('#tab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    </script>
+</body>
+
+</html>
