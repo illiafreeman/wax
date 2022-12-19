@@ -4360,7 +4360,35 @@ body {
   display: none;
 }
 .tab__content.active {
-  display: block;
+  display: flex;
+  gap: 100px;
+}
+
+.price {
+  margin-bottom: 32px;
+}
+.price:last-child {
+  margin-bottom: 0;
+}
+.price__col {
+  width: calc(50% - 50px);
+}
+.price__title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+.price__name {
+  font-weight: 400;
+  max-width: 260px;
+}
+.price__cost {
+  font-weight: 700;
+  color: #7D5182;
+}
+.price__desc {
+  font-size: 14px;
+  line-height: 17px;
 }
 
 @media only screen and (max-width: 1500px) {

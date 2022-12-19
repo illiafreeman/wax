@@ -931,13 +931,41 @@ body {
     &__wrap {}
     &__content {
         display: none;
+
         &.active{
-            display: block;
+            display: flex;
+            gap: 100px;
         }
     }
+    
 }
-.active {
+.price {
+    margin-bottom: 32px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+    &__col{
+        width: calc(50% - 50px);
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 14px;
+    }
+    &__name {
+        font-weight: 400;
+        max-width: 260px;
+    }
+    &__cost {
+        font-weight: 700;
+        color: $violet;
+    }
+    &__desc {
+        font-size: 14px;
+        line-height: 17px;
+    }
 }
+
 
 
 
