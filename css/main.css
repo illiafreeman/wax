@@ -3630,14 +3630,15 @@ body {
   background: #C4A7C8;
   transition: all 0.2s ease-in-out;
   width: 100%;
-  right: 0;
+  left: 0;
 }
 .footer__copy a:hover {
   color: #202020;
 }
 .footer__copy a:hover:before {
   width: 0;
-  left: 0;
+  right: 0;
+  left: auto;
 }
 
 /*end fixed footer*/
