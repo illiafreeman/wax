@@ -885,27 +885,49 @@ body {
         height: 100%;
     }
 }
-.about{
+.inner{
     display: block;
     padding: 90px 0 122px;
     .welcome__pic{
         float: right;
         margin-left: 100px;
     }
-    h1.title{
-        margin-bottom: 54px;
-    }
     .welcome__sub+.title_h2{
         margin-top: 68px;
     }
 }
-.price {
-}
-.title {
+.title_inner {
+    margin-bottom: 68px;
 }
 .tab {
-    &__item {}
-    &__btn {}
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+    &__item {
+        &.active{
+            .tab__btn{
+                color: #fff;
+                background-color: $violet;
+            }
+        }
+    }
+    &__btn {
+        padding: 0px 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
+        border-radius: 40px;
+        font-size: 24px;
+        line-height: 52px;
+        color: $black;
+        transition: $transition;
+        font-weight: 400;
+        &:hover{
+            color: #fff;
+            background-color: $violet;
+        }
+    }
     &__wrap {}
     &__content {
         display: none;

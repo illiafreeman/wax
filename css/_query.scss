@@ -575,18 +575,18 @@
         line-height: 12px;
         padding-bottom: 24px;
     }
-    .about h1.title {
+    .inner h1.title {
         display: none;
     }
-    .about {
+    .inner {
         display: flex;
         padding: 54px 0;
     }
-    .about .welcome__pic {
+    .inner .welcome__pic {
         float: none;
         margin-left: 0;
     }
-    .about .welcome__sub + .title_h2 {
+    .inner .welcome__sub + .title_h2 {
         margin-top: 38px;
     }
 

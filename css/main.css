@@ -4314,21 +4314,48 @@ body {
   height: 100%;
 }
 
-.about {
+.inner {
   display: block;
   padding: 90px 0 122px;
 }
-.about .welcome__pic {
+.inner .welcome__pic {
   float: right;
   margin-left: 100px;
 }
-.about h1.title {
-  margin-bottom: 54px;
-}
-.about .welcome__sub + .title_h2 {
+.inner .welcome__sub + .title_h2 {
   margin-top: 68px;
 }
 
+.title_inner {
+  margin-bottom: 68px;
+}
+
+.tab {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 68px;
+}
+.tab__item.active .tab__btn {
+  color: #fff;
+  background-color: #7D5182;
+}
+.tab__btn {
+  padding: 0px 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  border-radius: 40px;
+  font-size: 24px;
+  line-height: 52px;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+  font-weight: 400;
+}
+.tab__btn:hover {
+  color: #fff;
+  background-color: #7D5182;
+}
 .tab__content {
   display: none;
 }
@@ -4897,18 +4924,18 @@ body {
     line-height: 12px;
     padding-bottom: 24px;
   }
-  .about h1.title {
+  .inner h1.title {
     display: none;
   }
-  .about {
+  .inner {
     display: flex;
     padding: 54px 0;
   }
-  .about .welcome__pic {
+  .inner .welcome__pic {
     float: none;
     margin-left: 0;
   }
-  .about .welcome__sub + .title_h2 {
+  .inner .welcome__sub + .title_h2 {
     margin-top: 38px;
   }
 }
