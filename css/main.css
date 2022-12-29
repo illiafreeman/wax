@@ -4410,6 +4410,7 @@ body {
   body {
     font-size: 18px;
     line-height: 22px;
+    padding-top: 160px;
   }
   .container {
     width: 360px;
@@ -4417,8 +4418,13 @@ body {
     padding-right: 20px !important;
   }
   .header {
-    position: relative;
+    position: fixed;
+    top: 0;
     padding: 16px 0;
+    background: #fff;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 -1px 0px #E3CEE6 inset;
     margin-bottom: 8px;
   }
   .header .container {
